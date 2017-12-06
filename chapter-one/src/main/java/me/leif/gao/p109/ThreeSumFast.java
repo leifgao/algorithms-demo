@@ -3,6 +3,7 @@ package me.leif.gao.p109;
 import edu.princeton.cs.introcs.In;
 import edu.princeton.cs.introcs.StdOut;
 import edu.princeton.cs.introcs.Stopwatch;
+import me.leif.gao.Utils.FilePath;
 import me.leif.gao.p28.BinarySearch;
 
 import java.util.Arrays;
@@ -11,7 +12,7 @@ import java.util.Arrays;
  * Created by leif on 2017/12/2
  */
 public class ThreeSumFast {
-    private static final String testFileName = "p109/1Kints.txt";
+    private static final String testFileName = "p109/4Kints.txt";
 
     //利用二分查找
     private static int count(int[] a) {
@@ -29,7 +30,7 @@ public class ThreeSumFast {
     }
 
     public static void main(String[] args) {
-        int[] a = In.readInts(testFileName);
+        int[] a = In.readInts(FilePath.getFilePath(testFileName));
         Stopwatch timer = new Stopwatch();
         StdOut.println(count(a));
         double time = timer.elapsedTime();

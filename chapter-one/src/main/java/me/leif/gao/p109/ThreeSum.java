@@ -10,7 +10,7 @@ import me.leif.gao.Utils.FilePath;
  */
 public class ThreeSum {
 
-    private static final String testFileName = "p109/1Kints.txt";
+    private static final String testFileName = "p109/4Kints.txt";
 
     private static int count(int[] a) {
         int N = a.length;
